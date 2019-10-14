@@ -87,6 +87,10 @@ int main (int argc, char** argv) {
                 
                 //Pop closing delimiters
                 if(currentChar == '}' || currentChar == ')' || currentChar == ']') {
+                    if(delimiterStack.isEmpty()) {
+                        std::cout << "ERROR: Line " << lineNum << ": found " << currentChar << " but never found opening delimiter " << std::endl;
+                        exit(1);
+                    }
                     char poppedChar = delimiterStack.pop();
                     if(poppedChar == '{') {
                         if(currentChar != '}') {

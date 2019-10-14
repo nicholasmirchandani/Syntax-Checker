@@ -24,4 +24,4 @@ http://www.cplusplus.com/doc/tutorial/exceptions/<br/>
 
 Instructions for running the assignment:
 1) make
-2) ./SyntaxChecker.out
+2) ./SyntaxChecker.out <filename>

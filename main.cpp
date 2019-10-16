@@ -1,3 +1,12 @@
+/*
+Name: Nicholas Mirchandani
+ID: 2317024
+Email: nmirchandani@chapman.edu
+Course: CPSC350-02
+Assignment 3: Syntax Checker
+main is the driver for Syntax Checker.
+*/
+
 #include "GenStack.cpp" //Including GenStack.cpp instead of .h to resolve template linking errors while keeping them in separate files
 #include <iostream>
 #include <fstream>
@@ -8,7 +17,7 @@ char getCharFromUser();
 int main (int argc, char** argv) {
     if(argc < 2) {
         std::cout << "Please pass filename as a command argument" << std::endl;
-        exit(0);
+        exit(1);
     }
     std::string filename = argv[1];
 
